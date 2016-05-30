@@ -43,8 +43,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
+  max-width: 70rem;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -220,10 +219,6 @@ Main components
   position: relative;
   margin-left: 60px;
   background: #ffffff;
-  border-radius: 0.25em;
-  /*padding: 1em;*/
-  padding: 0.4em;
-  box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content::after {
   clear: both;
@@ -246,7 +241,6 @@ Main components
 }
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
   background: #acb7c0;
   color: #ffffff;
   border-radius: 0.25em;
@@ -257,7 +251,7 @@ Main components
 .cd-timeline-content .cd-date {
   float: left;
   padding: .2em 0;
-  opacity: .8;
+  opacity: 1;
 }
 .cd-timeline-content::before {
   content: '';
@@ -286,7 +280,6 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 0.5em;
     width: 45%;
   }
   .cd-timeline-content::before {
