@@ -1,66 +1,237 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/timeline.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+  <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Robotics by sameetandpotatoes</title>
-  </head>
+  <title>Robotics by sameetandpotatoes</title>
+</head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
+  <div id="container">
+    <div class="inner">
 
-        <header>
-          <h1>Robotics</h1>
-          <h2>My ROBOTC code for VEX 2014-2015. 27 pt programming skills and 12pt autonomous</h2>
-        </header>
+      <header>
+        <h1>Robotics</h1>
+        <h2>My ROBOTC code for VEX 2014-2015. 27 pt programming skills and 12pt autonomous</h2>
+      </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/sameetandpotatoes/Robotics/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/sameetandpotatoes/Robotics/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/sameetandpotatoes/Robotics" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+      <section id="downloads" class="clearfix">
+        <a href="https://github.com/sameetandpotatoes/Robotics/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+        <a href="https://github.com/sameetandpotatoes/Robotics/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+        <a href="https://github.com/sameetandpotatoes/Robotics" id="view-on-github" class="button"><span>View on GitHub</span></a>
+      </section>
 
-        <hr>
-
-        <section id="main_content">
-          <h2>
-<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h2>
-
-<p>My team built and programmed a robot to compete for the VEX Robotics 2014-2015 competition Skyrise. Check out some pictures at sameetsapra.com/robotics</p>
-
-<h2>
-<a id="code" class="anchor" href="#code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code</h2>
-
-<p>There are two parts to the code: autonomous and driver control. </p>
-
-<p><strong>Autonomous</strong>: There is a 60 second programming only mode where our robot scores 27 points by stacking five skyrise sections and four blocks. There is also a 15 second autonomous before every match where our robot scores 12 points by stacking three skyrise sections and a block on the skyrise section. A backup autonomous programs scores two blocks on the tiles.</p>
-
-<p><strong>Driver Control</strong>: Driver control code is where the dual joysticks were mapped to the robot controls. The joysticks had different controls so it required two different drivers at all times to operate. The advantage of this was that it made the robot extremely easy to drive.</p>
-
-<h2>
-<a id="file-structure" class="anchor" href="#file-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Structure</h2>
-
-<ul>
-<li><p><code>Auton.c</code> was our most stable version of the code that we used at the U.S Open VEX Robotics Nationals Championship. It does not contain our code for Programming Skills, where we score 27 points. That can be found in the <code>Old</code> folder. </p></li>
-<li><p>The excel spreadsheet is how we made our autonomous program dynamic. Here is how it works: we use a shaft encoder analog sensor to get differences in shaft encoder counts for when the elevator lift raises and lowers the skyrise section. The excel spreadsheet records all of these differences for three trials for the scoring of each section. Then, those differences are averaged, and plotted to correlate a linear relationship between the difference in shaft encoder counts versus the number of skyrise sections.</p></li>
-</ul>
-        </section>
-
-        <footer>
-          Robotics is maintained by <a href="https://github.com/sameetandpotatoes">sameetandpotatoes</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
+      <hr>
+      <h2>The Timeline</h2>
+      <section id="cd-timeline" class="cd-container">
+        <h2>First Robot</h2>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Our First Robot</h2>
+            <img src="Pictures/Our First Robot.jpg">
+            <span class="cd-date">December 2012</span>
+          </div>
+        </div>
+        <h2>Second Robot</h2>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Competition Ready</h2>
+            <img src="Pictures/Competition Ready.jpg">
+            <span class="cd-date">December 2013</span>
+          </div>
+        </div>
         
-      </div>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Flag Mount on the Second Robot</h2>
+            <img src="Pictures/Second Robot - Back.jpg">
+            <span class="cd-date">January 2014</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Me and the Robot</h2>
+            <img src="Pictures/Sameet.jpg">
+            <span class="cd-date">January 2014</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>The Team</h2>
+            <img src="Pictures/The Team.jpg">
+            <span class="cd-date">January 2014</span>
+          </div>
+        </div>
+        
+        <h2>Third Robot</h2>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Dual Battery Holsters</h2>
+            <img src="Pictures/Dual Battery Design.jpg">
+            <span class="cd-date">November 2014</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>The Claw</h2>
+            <img src="Pictures/The Claw.jpg">
+            <span class="cd-date">December 2014</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>The Lift</h2>
+            <img src="Pictures/The Lift.jpg">
+            <span class="cd-date">January 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Pneumatic Valve</h2>
+            <img src="Pictures/Pneumatic Valve.jpg">
+            <span class="cd-date">February 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Pneumatic Block Picker</h2>
+            <img src="Pictures/Pneumatic Block Picker.jpg">
+            <span class="cd-date">February 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Robot in Position</h2>
+            <img src="Pictures/Robot in Position.png">
+            <span class="cd-date">March 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-location">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>The Stadium</h2>
+            <img src="Pictures/The Stadium.jpg">
+            <span class="cd-date">April 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-location">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>The Stadium</h2>
+            <img src="Pictures/The Stadium.jpg">
+            <span class="cd-date">April 2015</span>
+          </div>
+        </div>
+        
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-movie">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2>Our Autonomous in Action</h2>
+            <video controls="controls">
+              <source src="Pictures/The Autonomous.mp4" type="video/mp4">
+            </video>
+            <span class="cd-date">April 2015</span>
+          </div>
+        </div>
+        
+      </section>
+      <!-- cd-timeline -->
+
+      <section id="main_content">
+        <h2>
+          <a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h2>
+
+        <p>My team built and programmed a robot to compete for the VEX Robotics 2014-2015 competition Skyrise. Check out some pictures at sameetsapra.com/robotics</p>
+
+        <h2>
+          <a id="code" class="anchor" href="#code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code</h2>
+
+        <p>There are two parts to the code: autonomous and driver control. </p>
+
+        <p><strong>Autonomous</strong>: There is a 60 second programming only mode where our robot scores 27 points by stacking five skyrise sections and four blocks. There is also a 15 second autonomous before every match where our robot scores 12 points
+          by stacking three skyrise sections and a block on the skyrise section. A backup autonomous programs scores two blocks on the tiles.</p>
+
+        <p><strong>Driver Control</strong>: Driver control code is where the dual joysticks were mapped to the robot controls. The joysticks had different controls so it required two different drivers at all times to operate. The advantage of this was that
+          it made the robot extremely easy to drive.</p>
+
+        <h2>
+        <a id="file-structure" class="anchor" href="#file-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Structure</h2>
+
+        <ul>
+          <li>
+            <p><code>Auton.c</code> was our most stable version of the code that we used at the U.S Open VEX Robotics Nationals Championship. It does not contain our code for Programming Skills, where we score 27 points. That can be found in the <code>Old</code>              folder. </p>
+          </li>
+          <li>
+            <p>The excel spreadsheet is how we made our autonomous program dynamic. Here is how it works: we use a shaft encoder analog sensor to get differences in shaft encoder counts for when the elevator lift raises and lowers the skyrise section. The
+              excel spreadsheet records all of these differences for three trials for the scoring of each section. Then, those differences are averaged, and plotted to correlate a linear relationship between the difference in shaft encoder counts versus
+              the number of skyrise sections.</p>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        Robotics is maintained by <a href="https://github.com/sameetandpotatoes">sameetandpotatoes</a>
+        <br> This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
 </html>
