@@ -1,6 +1,6 @@
 ##Purpose
 
-My team built and programmed a robot to compete for the VEX Robotics 2014-2015 competition Skyrise. Check out some pictures at sameetsapra.com/robotics
+My team built and programmed a robot to compete for the VEX Robotics 2014-2015 competition Skyrise. Check out some pictures at [http://sameetandpotatoes.github.io/Robotics]()
 
 ##Code
 
